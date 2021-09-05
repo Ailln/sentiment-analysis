@@ -1,0 +1,19 @@
+data:
+  train_path: ./data/Nlpcc2014Train.tsv # https://github.com/DinghaoXi/chinese-sentiment-datasets
+  max_length: 30
+  vocab:
+    none: 😐
+    happiness: 🥰
+    like: 😍
+    surprise: 😱
+    disgust: 😞
+    anger: 😠️
+    sadness: 😥
+    fear: 😨
+
+train:
+  pre_train_model: bert-base-chinese
+  batch_size: 256
+  learning_rate: 0.00005
+  num_epochs: 10
+  save_path: ./save/model.pt

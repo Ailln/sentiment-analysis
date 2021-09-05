@@ -140,3 +140,7 @@ cython_debug/
 # my
 .vscode/
 .idea/
+
+data/*.tsv
+save/
+*.lock
