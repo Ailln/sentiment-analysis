@@ -48,7 +48,7 @@ python -m app.test
 # 提供 API 服务
 python -m server.app
 # 测试 API
-curl http://127.0.0.1:8888/sentimentAnalysis?text=%E6%88%91%E5%BE%88%E5%BC%80%E5%BF%83
+curl http://127.0.0.1:8012/sentimentAnalysis?text=%E6%88%91%E5%BE%88%E5%BC%80%E5%BF%83
 ```
 
 

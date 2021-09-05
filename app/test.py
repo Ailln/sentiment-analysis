@@ -14,7 +14,7 @@ save_path = conf["train"]["save_path"]
 vocab = conf["data"]["vocab"]
 tokenizer = BertTokenizer.from_pretrained(bert_path)
 model = BertForSequenceClassification.from_pretrained(bert_path, num_labels=len(conf["data"]["vocab"]))
-model.load_state_dict(torch.load(save_path))
+model.load_state_dict(torch.load(save_path), map_location=device)
 print(">> load model success")
 model.to(device)
 
