@@ -6,7 +6,9 @@
 
 众所周知，机器学习任务大都可以被分为「分类」和「回归」两种任务，它们之间的区分是看数据时离散还是连续的。因此我们的情感分析任务可以被看作成一个「多分类任务」。
 
-为了更好地展示情感的变化，我使用 `emoji` 表情对分类结果进行了可视化，虽然不能完全展示出原有标签的意思，但是大致可以区分出来，参见 [DEMO](https://www.dovolopor.com/santiment-analysis) 。
+为了更好地展示情感的变化，我使用 `emoji` 表情对分类结果进行了可视化，虽然不能完全展示出原有标签的意思，但是大致可以区分出来，参见 [DEMO](https://www.dovolopor.com/sentiment-analysis) 。
+
+![Sentiment Analysis](./data/sentiment-analysis-v0.1.0.png)
 
 ## 2 数据
 
@@ -77,7 +79,9 @@ pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pyto
 
 ### 4.3 效果不好？
 
-调节超参。
+试试调节超参。
+
+> 我自己训练的结果也只能达到 `75%` 左右...
 
 另外 train.py 中 weight_name_list 是权重列表，你可以根据实际情况决定哪些权重需要微调。
 
